@@ -1,0 +1,192 @@
+/* Travel Search Section */
+.travel-search {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+}
+
+.travel-search h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.travel-search form {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.travel-search input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.travel-search button {
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.travel-search button:hover {
+    background-color: #ff6347;
+}
+
+/* Popular Destinations Section */
+.popular-destinations {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-destinations h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.popular-destinations .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.popular-destinations .destination-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.popular-destinations .destination-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.popular-destinations .destination-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.popular-destinations .destination-card p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.popular-destinations .destination-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.popular-destinations .destination-card a:hover {
+    background-color: #ff6347;
+}
+
+/* Travel Groups Section */
+.travel-groups {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+}
+
+.travel-groups h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.travel-groups p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.travel-groups button a {
+    text-decoration: none;
+    color: white;
+}
+
+.travel-groups button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    background-color: #ff7f50;
+    color: white;
+    border-radius: 5px;
+}
+
+.travel-groups button:hover {
+    background-color: #ff6347;
+}
+
+/* Travel Tips Section */
+.travel-tips {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.travel-tips h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.travel-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.travel-tips ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.travel-tips ul li a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+.travel-tips ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Travel Events Section */
+.travel-events {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.travel-events h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.travel-events ul {
+    list-style: none;
+    padding: 0;
+}
+
+.travel-events ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.travel-events ul li a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+.travel-events ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,73 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header and Navigation styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #888;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Add more specific styles for each book category */
+.fiction, .nonfiction, .poetry, .science, .comics, .biography, .selfhelp, .historical {
+    margin-top: 40px;
+}
