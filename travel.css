@@ -28,7 +28,7 @@
 .travel-search button {
     padding: 12px 20px;
     font-size: 1em;
-    background-color: #ff7f50;
+    background-color: #331780;
     color: white;
     border: none;
     border-radius: 5px;
@@ -36,7 +36,7 @@
 }
 
 .travel-search button:hover {
-    background-color: #ff6347;
+    background-color:  #331780;
 }
 
 /* Popular Destinations Section */
@@ -67,7 +67,7 @@
 
 .popular-destinations .destination-card img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -85,15 +85,16 @@
 .popular-destinations .destination-card a {
     display: inline-block;
     margin-top: 10px;
+     
     padding: 10px 20px;
-    background-color: #ff7f50;
+    background-color: #331780;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .popular-destinations .destination-card a:hover {
-    background-color: #ff6347;
+    background-color: #331780;
 }
 
 /* Travel Groups Section */
@@ -121,13 +122,13 @@
 .travel-groups button {
     padding: 12px 25px;
     font-size: 1.2em;
-    background-color: #ff7f50;
+    background-color :#331780;
     color: white;
     border-radius: 5px;
 }
 
 .travel-groups button:hover {
-    background-color: #ff6347;
+    background-color:  #331780;
 }
 
 /* Travel Tips Section */
@@ -152,7 +153,7 @@
 }
 
 .travel-tips ul li a {
-    color: #ff7f50;
+    color: #331780;
     text-decoration: none;
 }
 
@@ -183,10 +184,31 @@
 }
 
 .travel-events ul li a {
-    color: #ff7f50;
+    color: #331780;
     text-decoration: none;
 }
 
 .travel-events ul li a:hover {
     text-decoration: underline;
+}
+footer{
+    background-color:rgb(24, 17, 17);
+    color:white;
+    text-align:center;
+    padding :20px ;
+    margin-top :20px;
+    font-size: 1.2em;
+    
+
+}
+footer li a{
+    color:white;
+    text-decoration:none;
+   
+}
+footer ul {
+    list-style:none;
+}
+footer ul li a:hover{
+    text-decoration:underline;
 }
