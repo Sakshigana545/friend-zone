@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="movie.css">
+    <title>demo</title>
+</head>
+<body>
+    <section class="coffee-varieties">
+        <h2>Explore Coffee Varieties</h2>
+        <div class="coffee-grid">
+            <div class="coffee-card">
+                <img src="espresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>A rich, full-bodied coffee served as a base for many coffee drinks.</p>
+            </div>
+            <div class="coffee-card">
+                <img src="latte.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>A creamy coffee with steamed milk, perfect for a smooth taste.</p>
+            </div>
+            <div class="coffee-card">
+                <img src="cappuccino.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>A classic coffee with equal parts espresso, steamed milk, and foam.</p>
+            </div>
+            <div class="coffee-card">
+                <img src="americano.jpg" alt="Americano">
+                <h3>Americano</h3>
+                <p>A simple yet flavorful black coffee made by diluting espresso with hot water.</p>
+            </div>
+        </div>
+    </section>
+    <section class="coffee-shops">
+        <h2>Find the Best Coffee Shops</h2>
+        <form action="search_coffee_shops.html" method="get">
+            <input type="text" name="query" placeholder="Search by location or coffee type" required>
+            <button type="submit">Search</button>
+        </form>
+        <div class="coffee-shop-list">
+            <div class="coffee-shop">
+                <h3>Central Perk Cafe</h3>
+                <p>Located in downtown, they serve an amazing variety of brews!</p>
+                <button><a href="shop_details.html?shop=central_perk">View Details</a></button>
+            </div>
+            <div class="coffee-shop">
+                <h3>Coffee Break</h3>
+                <p>A cozy little cafe offering organic, fair trade coffee blends.</p>
+                <button><a href="shop_details.html?shop=coffee_break">View Details</a></button>
+            </div>
+            <!-- More coffee shop listings -->
+        </div>
+    </section>
+    <section class="coffee-events">
+        <h2>Join a Coffee Meetup</h2>
+        <p>Connect with fellow coffee lovers! Join a local coffee meetup or plan your own event.</p>
+        <div class="event-list">
+            <div class="event-card">
+                <h3>Latte Art Workshop</h3>
+                <p>Join us for a fun workshop on creating beautiful latte art!</p>
+                <button><a href="event_details.html?event=latte_art">Join Event</a></button>
+            </div>
+            <div class="event-card">
+                <h3>Meetup at Central Perk Cafe</h3>
+                <p>Let's meet at Central Perk Cafe and enjoy some freshly brewed coffee together.</p>
+                <button><a href="event_details.html?event=central_perk_meetup">Join Event</a></button>
+            </div>
+            <!-- More event cards -->
+        </div>
+    </section>
+    <section class="coffee-recipes">
+        <h2>Coffee Recipes</h2>
+        <ul>
+            <li><a href="recipe_espresso.html">How to Make the Perfect Espresso</a></li>
+            <li><a href="recipe_cold_brew.html">Cold Brew: A Step-by-Step Guide</a></li>
+            <li><a href="recipe_latte.html">Latte: From Steamed Milk to Perfection</a></li>
+        </ul>
+    </section>
+    <section class="coffee-gear">
+        <h2>Essential Coffee Gear</h2>
+        <p>Check out some must-have coffee accessories for the perfect brewing experience!</p>
+        <div class="gear-list">
+            <div class="gear-item">
+                <img src="coffee_grinder.jpg" alt="Coffee Grinder">
+                <h3>Coffee Grinder</h3>
+                <p>Get the freshest grind for your coffee beans.</p>
+                <button><a href="buy_gear.html?gear=grinder">Buy Now</a></button>
+            </div>
+            <div class="gear-item">
+                <img src="coffee_maker.jpg" alt="Coffee Maker">
+                <h3>Coffee Maker</h3>
+                <p>The best machines for making delicious brews at home.</p>
+                <button><a href="buy_gear.html?gear=maker">Buy Now</a></button>
+            </div>
+            <!-- More gear items -->
+        </div>
+    </section>
+    <section class="coffee-polls">
+        <h2>Coffee Poll</h2>
+        <p>What's your favorite type of coffee?</p>
+        <form action="poll_results.html" method="get">
+            <label>
+                <input type="radio" name="coffee" value="espresso"> Espresso
+            </label>
+            <label>
+                <input type="radio" name="coffee" value="latte"> Latte
+            </label>
+            <label>
+                <input type="radio" name="coffee" value="cappuccino"> Cappuccino
+            </label>
+            <button type="submit">Vote</button>
+        </form>
+    </section>
+                        
+</body>
+</html>

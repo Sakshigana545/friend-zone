@@ -136,7 +136,25 @@ nav ul li a:hover {
     }
 } 
 .nonfiction {
-    margin: 0 10px; /* Reduces margin on the left and right by 10px */
-    padding: 20px; /* Optional: keep padding if desired */
+    margin: 40px 0;
+    padding: 20px;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.poetry {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.comics
+    {
+        margin: 40px 0;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
 }
