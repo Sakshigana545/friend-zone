@@ -3,115 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="movie.css">
-    <title>demo</title>
+    <title>Movies - Friend Zone</title>
+    <link rel="stylesheet" href="movie.css">    
 </head>
 <body>
-    <section class="coffee-varieties">
-        <h2>Explore Coffee Varieties</h2>
-        <div class="coffee-grid">
-            <div class="coffee-card">
-                <img src="espresso.jpg" alt="Espresso">
-                <h3>Espresso</h3>
-                <p>A rich, full-bodied coffee served as a base for many coffee drinks.</p>
-            </div>
-            <div class="coffee-card">
-                <img src="latte.jpg" alt="Latte">
-                <h3>Latte</h3>
-                <p>A creamy coffee with steamed milk, perfect for a smooth taste.</p>
-            </div>
-            <div class="coffee-card">
-                <img src="cappuccino.jpg" alt="Cappuccino">
-                <h3>Cappuccino</h3>
-                <p>A classic coffee with equal parts espresso, steamed milk, and foam.</p>
-            </div>
-            <div class="coffee-card">
-                <img src="americano.jpg" alt="Americano">
-                <h3>Americano</h3>
-                <p>A simple yet flavorful black coffee made by diluting espresso with hot water.</p>
-            </div>
-        </div>
-    </section>
-    <section class="coffee-shops">
-        <h2>Find the Best Coffee Shops</h2>
-        <form action="search_coffee_shops.html" method="get">
-            <input type="text" name="query" placeholder="Search by location or coffee type" required>
-            <button type="submit">Search</button>
-        </form>
-        <div class="coffee-shop-list">
-            <div class="coffee-shop">
-                <h3>Central Perk Cafe</h3>
-                <p>Located in downtown, they serve an amazing variety of brews!</p>
-                <button><a href="shop_details.html?shop=central_perk">View Details</a></button>
-            </div>
-            <div class="coffee-shop">
-                <h3>Coffee Break</h3>
-                <p>A cozy little cafe offering organic, fair trade coffee blends.</p>
-                <button><a href="shop_details.html?shop=coffee_break">View Details</a></button>
-            </div>
-            <!-- More coffee shop listings -->
-        </div>
-    </section>
-    <section class="coffee-events">
-        <h2>Join a Coffee Meetup</h2>
-        <p>Connect with fellow coffee lovers! Join a local coffee meetup or plan your own event.</p>
-        <div class="event-list">
-            <div class="event-card">
-                <h3>Latte Art Workshop</h3>
-                <p>Join us for a fun workshop on creating beautiful latte art!</p>
-                <button><a href="event_details.html?event=latte_art">Join Event</a></button>
-            </div>
-            <div class="event-card">
-                <h3>Meetup at Central Perk Cafe</h3>
-                <p>Let's meet at Central Perk Cafe and enjoy some freshly brewed coffee together.</p>
-                <button><a href="event_details.html?event=central_perk_meetup">Join Event</a></button>
-            </div>
-            <!-- More event cards -->
-        </div>
-    </section>
-    <section class="coffee-recipes">
-        <h2>Coffee Recipes</h2>
+    <h1 align ="center">Welcome to movie zone</h1>
+    <h4 id="welcome-message">Welcome to Movie Zone, {user name}!</h4>
+
+
+    <nav>
         <ul>
-            <li><a href="recipe_espresso.html">How to Make the Perfect Espresso</a></li>
-            <li><a href="recipe_cold_brew.html">Cold Brew: A Step-by-Step Guide</a></li>
-            <li><a href="recipe_latte.html">Latte: From Steamed Milk to Perfection</a></li>
+            <li><a href="#Latest releases">Latest releases</a></li>
+            <li><a href="#Drama">Drama</a></li>
+            <!-- <a href="#Action">Action</a></li>></li>
+            <li><a href="#Thriller">Thriller</a></li> -->
+            <li><a href="#web series">Web series</a><li>
+            <!-- <li><a href="#comedy">Comedy</a></li> -->
+            <!-- <li><a href="#Horror">Horror</a></li> -->
         </ul>
-    </section>
-    <section class="coffee-gear">
-        <h2>Essential Coffee Gear</h2>
-        <p>Check out some must-have coffee accessories for the perfect brewing experience!</p>
-        <div class="gear-list">
-            <div class="gear-item">
-                <img src="coffee_grinder.jpg" alt="Coffee Grinder">
-                <h3>Coffee Grinder</h3>
-                <p>Get the freshest grind for your coffee beans.</p>
-                <button><a href="buy_gear.html?gear=grinder">Buy Now</a></button>
+    </nav>
+
+    <div class="Latest releases" id="Latest releases">
+        <h1>Latest releases</h1>
+        <div class="movie-container">
+            <div class="movie-card">
+                <img src="black.jpeg" alt="Black Bag" heigth="200" width="200">
+                <div class="movie-details">
+                    <h4><b>Movie</b>: Black Bag</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                </div>
             </div>
-            <div class="gear-item">
-                <img src="coffee_maker.jpg" alt="Coffee Maker">
-                <h3>Coffee Maker</h3>
-                <p>The best machines for making delicious brews at home.</p>
-                <button><a href="buy_gear.html?gear=maker">Buy Now</a></button>
+
+                <div class="movie-card">
+                <img src="be happy.avif" alt="Be Happy" heigth="200" width="200">
+                <div class="movie-details">
+                    <h4><b>Movie</b>: Be Happy</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                </div>
             </div>
-            <!-- More gear items -->
-        </div>
-    </section>
-    <section class="coffee-polls">
-        <h2>Coffee Poll</h2>
-        <p>What's your favorite type of coffee?</p>
-        <form action="poll_results.html" method="get">
-            <label>
-                <input type="radio" name="coffee" value="espresso"> Espresso
-            </label>
-            <label>
-                <input type="radio" name="coffee" value="latte"> Latte
-            </label>
-            <label>
-                <input type="radio" name="coffee" value="cappuccino"> Cappuccino
-            </label>
-            <button type="submit">Vote</button>
-        </form>
-    </section>
-                        
+
+            <div class="movie-card">
+                <img src="Aachari baa.jpeg" alt="Aachari Baa" heigth="200" width="200">
+                <div class="movie-details">
+                    <h4><b>Movie</b>: Aachari Baa</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                </div>
+            </div>
+
+            <div class="movie-card" id="one">
+                <img src="The Accountant 2.jpeg" alt="The Accountant 2" heigth="400" width="400">
+                <div class="movie-details">
+                    <h4><b>Movie</b>: The Accountant 2</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                </div>
+            </div>
+
+            <div class="movie-card" >
+                <img src="The Woman in the Yard.jpeg" alt="The Woman in the Yard" heigth="400" width="400">
+                <div class="movie-details" id="one">
+                    <h4><b>Movie</b>: The Woman in the Yard</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                </div>
+            </div>
+            
+            <div class="movie-card">
+                <img src="paani.jpeg" alt="Be Happy" heigth="200" width="200">
+                <div class="movie-details">
+                    <h4><b>Movie</b>: Be Happy</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                </div>
+            </div>
+    </div>
+    </div>
+     <!--Drama section-->
+    <div class="Drama" id="Drama">
+        <h1>Drama</h1>
+        <div class="drama-container">
+            <div class="drama-card">
+                <img src="black.jpeg" alt="Black Bag" heigth="200" width="200">
+                <div class="drama-details">
+                    <h4><b>Drama</b>: Black Bag</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                </div>
+            </div>
+                
+                    <div class="drama-card">
+                <img src="anupamaa.jpeg" alt="anupamaa" heigth="200" width="200">   
+                <div class="drama-details">
+                    <h4><b>Drama</b>:anupamaa</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                 </div>
+            </div>
+            <div class="drama-card">
+                <img src="yeh rishta kya kehelata hai.jpeg" alt="yeh rishta kya kehelata hai" heigth="200" width="200">   
+                <div class="drama-details">
+                    <h4><b>Drama</b>: yeh rishta kya kehelata hai</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                 </div>
+            </div>
+            <div class="drama-card">
+                <img src="panchyat.jpg" alt="panchyat" heigth="200" width="200">   
+                <div class="drama-details">
+                    <h4><b>Drama</b>:panchya</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                 </div>
+            </div>
+            <div class="drama-card">
+                <img src="Business proposal.jpg" alt="Business proposal" heigth="200" width="200">   
+                <div class="drama-details">
+                    <h4><b>Drama</b>: Business proposaly</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                 </div>
+            </div>
+           <div class="drama-card">
+                <img src="School 2017.jpg" alt="School 2017" heigth="200" width="200">   
+                <div class="drama-details">
+                    <h4><b>Drama</b>: School 2017</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                 </div>
+            </div>
+            <div class="drama-card">
+                <img src="Something in the Rain.jpg" alt="Something in the Rain" heigth="200" width="200">   
+                <div class="drama-details">
+                    <h4><b>Drama</b>: Something in the Rain</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                 </div>
+            </div>
+            <div class="drama-card">
+                <img src="My Dearest.jpg" alt="My Dearest" heigth="200" width="200">   
+                <div class="drama-details">
+                    <h4><b>Drama</b>:My Dearest</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+                 </div>
+            </div>
+          </div>
+          </div>
+          <!--web series section-->
+           
+          <div class="web_series" id="web series">
+        <h1>Web series</h1>
+        <div class="web_series-container">
+            <div class="web_series-card">
+                <img src="The Jungle Book.jpg" alt="The Jungle Book " heigth="200" width="200">
+                <div class="web_series-details">
+                    <h4><b>Web series</b>: The Jungle Book</h4>
+                    <p><b>Rating</b>: 4.5</p>
+                    <button class="watch-now">Watch Now</button>
+            </div>
+      </div>
+      <div class="web_series-card">
+        <img src="Raja Shivchatrapati.jpg" alt="Raja Shivchatrapati" heigth="200" width="200">
+        <div class="web_series-details">
+            <h4><b>Web series</b>: Raja Shivchatrapati</h4>
+            <p><b>Rating</b>: 4.5</p>
+            <button class="watch-now">Watch Now</button>
+    </div>
+</div>
+<div class="web_series-card">
+    <img src="Fauda.jpg" alt="Fauda" heigth="200" width="200">
+    <div class="web_series-details">
+        <h4><b>Web series</b>: Fauda</h4>
+        <p><b>Rating</b>: 4.5</p>
+        <button class="watch-now">Watch Now</button>
+</div>
+</div>
+<div class="web_series-card">
+    <img src="Little Krishna.jpg" alt="Little Krishna" >
+    <div class="web_series-details">
+        <h4><b>Web series</b>: Little Krishna</h4>
+        <p><b>Rating</b>: 4.5</p>
+        <button class="watch-now">Watch Now</button>
+</div>
+</div>
+<div class="web_series-card">
+    <img src="My Love from the Star.jpg" alt="My Love from the Star" heigth="200" width="200">
+    <div class="web series-details">
+        <h4><b>Web series</b>: My Love from the Star</h4>
+        <p><b>Rating</b>: 4.5</p>
+        <button class="watch-now">Watch Now</button>
+</div>
+</div>
+<div class="web_series-card">
+    <img src="Agents of S.H.I.E.L.D.jpg" alt="Agents of S.H.I.E.L.D" heigth="200" width="200">
+    <div class="web_series-details">
+        <h4><b>Web series</b>:Agents of S.H.I.E.L.D</h4>
+        <p><b>Rating</b>: 4.5</p>
+        <button class="watch-now">Watch Now</button>
+</div>
+</div>
+      </div>
+      </div>
+    <script src="movie.js"></script>
 </body>
 </html>
