@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone - E-commerce</title>
+    <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>ShopZone</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#cart" id="cart-link">Cart (0)</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section id="home">
+            <h2>Welcome to ShopZone!</h2>
+            <p>Shop the latest collection of products at affordable prices.</p>
+            <!-- <button onclick="window.location.href='#categories'">Shop Now</button> -->
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories">
+            <h2>Shop by Categories</h2>
+            <div class="categories-container">
+                <div class="category-card">
+                    <img src="men.webp" alt="Men's Fashion">
+                    <h3>Men's Fashion</h3>
+                    <!-- <button onclick="window.location.href='men.html'">Shop Now</button> -->
+                     <button><a href="#men">shop Now</a></button>
+                </div>
+                <div class="category-card">
+                    <img src="female.webp" alt="Women's Fashion">
+                    <h3>Women's Fashion</h3>
+                    <button onclick="window.location.href='#women'">Shop Now</button>
+                </div>
+                <div class="category-card">
+                    <img src="kids.webp">
+                    <h3>Kids' Fashion</h3>
+                    <button onclick="window.location.href='#kids'">Shop Now</button>
+                </div>
+                <div class="category-card">
+                    <img src="home_decor.jpg" alt="Home Decor">
+                    <h3>Home Decor</h3>
+                    <button onclick="window.location.href='#home_decor'">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="shirt.jpg" alt="Shirt">
+                    <h3>Men's Shirt</h3>
+                    <p>$29.99</p>
+                    <button onclick="addToCart('Men\'s Shirt', 29.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="dress.jpg" alt="Dress">
+                    <h3>Women's Dress</h3>
+                    <p>$39.99</p>
+                    <button onclick="addToCart('Women\'s Dress', 39.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="toys.jpg" alt="Toys">
+                    <h3>Kids' Toy</h3>
+                    <p>$15.99</p>
+                    <button onclick="addToCart('Kids\' Toy', 15.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="vase.jpg" alt="Vase">
+                    <h3>Home Decor Vase</h3>
+                    <p>$19.99</p>
+                    <button onclick="addToCart('Home Decor Vase', 19.99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 ShopZone. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart Modal (Hidden Initially) -->
+    <div id="cart-modal" class="cart-modal">
+        <h3>Your Cart</h3>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+        <button onclick="closeCart()">Close</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

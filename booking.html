@@ -1,0 +1,68 @@
+<section class="signup">
+    <h2>Sign Up as a Theater Owner</h2>
+    <form id="theater-signup-form" action="/signup" method="POST">
+        <label for="theater-name">Theater Name:</label>
+        <input type="text" id="theater-name" name="theater_name" required>
+
+        <label for="owner-name">Owner Name:</label>
+        <input type="text" id="owner-name" name="owner_name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</section>
+<section class="movie-listing">
+    <h2>List a Movie</h2>
+    <form id="movie-listing-form" action="/list-movie" method="POST">
+        <label for="movie-title">Movie Title:</label>
+        <input type="text" id="movie-title" name="movie_title" required>
+
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" required>
+
+        <label for="showtimes">Showtimes (comma-separated):</label>
+        <input type="text" id="showtimes" name="showtimes" required>
+
+        <label for="theater-name">Select Theater:</label>
+        <select id="theater-name" name="theater_name" required>
+            <!-- Dynamically populated based on logged-in owner’s theaters -->
+            <option value="theater1">Theater 1</option>
+            <option value="theater2">Theater 2</option>
+        </select>
+
+        <button type="submit">List Movie</button>
+    </form>
+</section>
+<section class="theater-selection">
+    <h2>Select Your Theater</h2>
+    <form id="movie-theater-selection">
+        <label for="movie">Select Movie:</label>
+        <select id="movie" name="movie" required>
+            <option value="black-bag">Black Bag</option>
+            <option value="be-happy">Be Happy</option>
+            <option value="aachari-baa">Aachari Baa</option>
+            <!-- Dynamically populate this with movies -->
+        </select>
+
+        <label for="theater">Select Theater:</label>
+        <select id="theater" name="theater" required>
+            <option value="theater1">Theater 1</option>
+            <option value="theater2">Theater 2</option>
+            <!-- Dynamically populate this with theaters -->
+        </select>
+
+        <button type="submit">Choose Theater</button>
+    </form>
+</section>
+<section class="showtimes">
+    <h2>Available Showtimes</h2>
+    <div id="showtimes-container">
+        <!-- Dynamically show the available showtimes for the selected movie and theater -->
+    </div>
+    <button class="book-ticket">Book Ticket</button>
+</section>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Listing</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div class="container">
+        <h3 align="center">Welcome To Shop Listing</h3>
+        <form class="shop" action="/action">
+            <!-- User Information -->
+            <fieldset>
+                <legend>User Information</legend>
+                <label for="user">User Name</label>
+                <input type="text" id="user" placeholder="enter your name" name="user" required >
+                <br><br>
+
+                <label for="shop">Shop Name</label>
+                <input type="text" id="shop" placeholder="enter shop name" name="shop" required >
+                <br><br>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="enter address" name="address" required >
+                <br><br>
+
+                <label for="contact">Contact</label>
+                <input type="text" id="contact" placeholder="enter contact" name="contact" required>
+                <br><br>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter email" name="email" required>
+                <br><br>
+                
+
+            <!-- Shop Details -->
+            <fieldset>
+                  <legend>Shop Details</legend>
+                  <label for="shopName">Shop Name</label>
+                  <input type="text" id="ShopName" placeholder="Enter shop name" name="shopName" required>
+                    <br><br>
+                <label for="shopType">Shop Type</label>
+                <select id="shopType" name="shopType" required>
+                    <option value="grocery">Grocery</option>
+                    <option value="bakery">Bakery</option>
+                    <option value="butcher">Butcher</option>
+                    <option value="pharmacy">Pharmacy</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+
+                <label for="operatingHours">Operating Hours</label>
+                <input type="text" id="operatingHours" placeholder="e.g., 9 AM - 9 PM" name="operatingHours" required>
+                <br><br>
+
+                <label for="website">Website URL</label>
+                <input type="url" id="website" placeholder="Enter website URL" name="website">
+                <br><br>
+
+               
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Enter shop description" name="description" rows="4" required></textarea>
+                <br><br>
+
+                <label for="logo">Upload Logo/Image</label>
+                <input type="file" id="logo" name="logo" accept="image/*">
+                <br><br>
+                <lable>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the terms and conditions
+                </lable>
+                <br>
+                <lable for="submit"></lable>
+                <input type="submit" id="submit" value="submit" name="submit">
+            </fieldset>
+            
+        
+        </form>
+    </div>
+</body>
+</html>
