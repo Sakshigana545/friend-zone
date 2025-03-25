@@ -1,83 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friend Zone</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <h1>Friend Zone</h1>
-        </div>
+      <div class="logo">
+        <h1>Friend-zone</h1>
+   </div>
+      <div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="book.html">Books</a></li>
-                <li><a href="coffee.html">Coffee</a></li>
-                <li><a href="shopping.html">Shopping</a></li>
-                <li><a href="dinner.html">Dinner</a></li>
-                <li><a href="travel.html">Travelling</a></li>
-                <li><a href="movie.html">Movies</a></li>
-            </ul>
+          <ul>
+            <li><a href="signup.html">SIGNUP</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Welcome to Friend Zone – Make New Friends and Chat!</h2>
-        <p>Join a community of amazing people and build lasting friendships.</p>
-        <button><a href="signup.html">Sign Up Now</a></button>
+    <section>
+      <div class="head">
+        <h1>Group  and Event:connect for Causal Meetup</h1> 
+<h3>Meet People Who Share Love and Affection Through Meetup</h3>
+      </div>
     </section>
-
-    <!-- Search Bar -->
-    <section class="search-bar">
-        <form action="search_results.html" method="get">
-            <input type="text" name="query" placeholder="Search for event..." required>
-            <button type="submit">Search</button>
-        </form>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="feature">
-            <h3>Find New Friends</h3>
-            <p>Connect with people who share your hobbies and interests!</p>
+   
+      <section>
+        <div class="search-container">
+          <!-- Search form -->
+          <form action="/action_page.php" method="GET">
+            <input type="text" placeholder="Search.." name="search" id="search-input" required>
+            <button type="submit" id="search-button">
+              <i class="fa fa-search"></i> <!-- Magnifying Glass Icon -->
+            </button>
+          </form>
         </div>
-        <div class="feature">
-            <h3>Chat & Message</h3>
-            <p>Start conversations and make meaningful connections.</p>
+      
+        <!-- Displaying the results or feedback -->
+        <div id="search-results">
+          <p>Start typing to search...</p>
         </div>
-        <div class="feature">
-            <h3>Join Events</h3>
-            <p>Meet people through events, both virtual and real-world!</p>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works">
-        <h2>How It Works</h2>
-        <ol>
-            <li>Sign Up for Free</li>
-            <li>Create Your Profile</li>
-            <li>Send Friend Requests & Start Chatting</li>
-        </ol>
-    </section>
-
-    <!-- Featured Profiles -->
-    <section class="featured-profiles">
-        <h2>Meet New Friends</h2>
-        <!-- Add some user profile cards here -->
-    </section>
-         <footer>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-        </ul>
-        <p>&copy; 2025 Friend Zone</p>
+      </section>
+    <!----middle page-->
+<section>
+  <div class="card-container">
+    <div class="card">
+      <a href="book.html">
+        <img src="books.jpg">
+      </a>
+      <div class="card-text">
+        <h2>Books</h2>
+    </div>
+    <div class="card">
+      <a href="movie.html">
+        <img src="movie.jpg">
+      </a>
+      <div class="card-text">
+        <h2>Movie</h2>
+    </div>
+    <div class="card">
+      <a href="shopping.html">
+        <img src="shooping.jpeg">
+      </a>
+      <div class="card-text">
+        <h2>shopping</h2>
+    </div>
+    <div class="card">
+      <a href="travel.html">
+        <img src="travelling.jpg">
+      </a>
+      <div class="card-text">
+        <h2>Travelling</h2>
+    </div>
+  </div>
+</section>
+    <footer>
+      <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+      <p>&copy; 2025 Friend Zone</p>
     </footer>
-</body>
+  </body>
 </html>
