@@ -1,88 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friend Zone</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <h1>Friend-zone</h1>
-   </div>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="signup.html">SIGNUP</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Friend Zone</h1>
+        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+          <input type="text" placeholder="Search.." name="search2">
+          <button type="submit"><i class="fas fa-search"></i></button>  
+        </form>
+    </div>
+     <div class="main">
+         <div class="sen">
+           <h2>The people platform—Where</h2>
+           <h2>interests become friendships</h2>
+           <p>Whatever your interest, from hiking and reading to networking and skill sharing,</p>
+           <p> there are thousands of people who share it on Meetup. Events are happening every day—sign up to join the fun.</p>
+         </div>
+         <div class="img_div">
+          <img src="friend-zone/irl_event.svg">
+         </div>
+     </div>
 
-    <section>
-      <div class="head">
-        <h1>Group  and Event:connect for Causal Meetup</h1> 
-<h3>Meet People Who Share Love and Affection Through Meetup</h3>
+     <h2 align="center">Explore The Categories</h2>
+    <div class="nav">
+      <div class="movie">
+         <a href="movie.html">
+            <img src="movies.png">
+         </a>
       </div>
-    </section>
-   
-      <section>
-        <div class="search-container">
-          <!-- Search form -->
-          <form action="/action_page.php" method="GET">
-            <input type="text" placeholder="Search.." name="search" id="search-input" required>
-            <button type="submit" id="search-button">
-              <i class="fa fa-search"></i> <!-- Magnifying Glass Icon -->
-            </button>
-          </form>
-        </div>
-      
-        <!-- Displaying the results or feedback -->
-        <div id="search-results">
-          <p>Start typing to search...</p>
-        </div>
-      </section>
-    <!----middle page-->
-<section>
-  <div class="card-container">
-    <div class="card">
-      <a href="book.html">
-        <img src="books.jpg">
-      </a>
-      <div class="card-text">
-        <h2>Books</h2>
-    </div>
-    <div class="card">
-      <a href="movie.html">
-        <img src="movie.jpg">
-      </a>
-      <div class="card-text">
-        <h2>Movie</h2>
-    </div>
-    <div class="card">
-      <a href="shopping.html">
-        <img src="shooping.jpeg">
-      </a>
-      <div class="card-text">
-        <h2>shopping</h2>
-    </div>
-    <div class="card">
-      <a href="travel.html">
-        <img src="travelling.jpg">
-      </a>
-      <div class="card-text">
-        <h2>Travelling</h2>
-    </div>
-  </div>
-</section>
-    <footer>
-      <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-      </ul>
-      <p>&copy; 2025 Friend Zone</p>
-    </footer>
-  </body>
+      <div class="book">
+         <a href="book.html">
+            <img src="book..png">
+         </a>
+      </div>
+      <div class="shopping">
+         <a href="shopping.html">
+            <img src="shooping.png">
+         </a>
+      </div>
+      <div class="travel">
+         <a href="travel.html">
+            <img src="travel.jpg" >
+         </a>
+      </div>
+      <div class="date">
+         <a href="date.html">
+            <img src="dating.webp">
+         </a>
+      </div>
+   </div>
+    <div class="footer">
+        <h2>Friend Zone</h2>
+        <p>© 2021 Friend Zone</p>
+    </div>   
+</body>
 </html>
