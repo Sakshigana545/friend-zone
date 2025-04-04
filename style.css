@@ -84,8 +84,12 @@ button:hover {
   justify-content: space-between;
   padding: 2rem;
   flex-wrap: wrap; /* Allow elements to wrap when the screen is smaller */
+  margin-left: 2rem;
 }
-
+b{
+  color: black;
+  font-weight: bold;
+}
 .sen {
   text-align: left;
   margin-left: 5rem;
@@ -120,9 +124,10 @@ button:hover {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 4rem;
-  background-color:  #ebd9d9;
+  /* background-color:  #ebd9d9; */
   margin-left: 10rem;
   margin-right: 15rem;
+  margin-bottom: 3rem;
 }
 
 .nav div {
@@ -238,5 +243,13 @@ button:hover {
 }
 .footer-links  li a{
    text-decoration: none;
-   color: #a54848
+   color: #a54848;
+   
+}
+.footer-links {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:#a54848;
 }
